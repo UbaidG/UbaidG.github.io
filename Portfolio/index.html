@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubaid AG</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="index.html">U<span>G</span></a>
+            
+            <img id="mobile-cta" class="mobile-menu" src="img/Icons/1828675-basic-ui/svg/043-menu.svg" alt="OpenNav">
+            
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="img/Icons/1828675-basic-ui/svg/019-close.svg" alt="CloseNav">
+                <ul class="primary-nav">
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Achievements</a></li>
+                    <li><a href="#">Resume</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li><a href="#">Leave Msg</a></li>
+                    <li class="do-not-click"><a href="https://youtu.be/dQw4w9WgXcQ">DO NOT CLICK!</a></li>
+                </ul>
+
+            </nav>
+        </div>
+        
+        
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <img src="img/me.png" class="hero-img" alt="myphoto">
+            <div class="middle-col">                
+                <p class="subhead">Hi there i am</p>
+                <h1>Ubaid <span>Akhtar </span>Ghante </h1>   
+            </div>
+            <div class="right-col">
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=100009325291522"><img src="img/Icons/1384020-social-media/svg/001-facebook.svg" alt="Facebook"></a></li>
+                    <li><a href="https://www.linkedin.com/in/ubaid-ghante-72a350193"><img src="img/Icons/1384020-social-media/svg/010-linkedin.svg" alt="LinkedIn"></a></li>
+                    <li><a href="https://instagram.com/ubaid_a_g_?igshid=1soettmdiu2n3"><img src="img/Icons/1384020-social-media/svg/011-instagram.svg" alt="Insta"></a></li> 
+                </ul>
+                
+            </div>
+        </div>
+
+    </section>
+    <section class="contact-section">
+        <div class="container">
+            
+                <h2>Contact</h2>
+                <form id="cf" method="post" action="php/contact-form-handler.php">
+                    <label for="name">Name</label>
+                    <input class="form-control" type="text" id="name" name="name"  placeholder="Enter Your Name" required>
+                    
+                    <label for="email">E-mail</label>
+                    <input class="form-control" type="email" id="email" name="email" placeholder="Enter e-mail" required>
+
+                    <label for="message">Message</label>
+                    <textarea class="form-control" name="message" id="message" cols="30" rows="10" required></textarea>
+
+                    <input class="send-message-cta" type="submit" value="Send message" >
+                </form>
+            
+        </div>
+    </section>
+
+    <script>
+        const mobileBtn = document.getElementById('mobile-cta')
+                nav = document.querySelector('nav')
+                mobileBtnExit = document.getElementById('mobile-exit');
+        
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+    </script>
+</body>
+</html>
