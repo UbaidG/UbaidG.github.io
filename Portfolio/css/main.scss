@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+:root{
+    --p1-color : #000000;
+    --p2-color : #5f5f5f;
+    --p3-color : gray;
+    --cool-color : linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: white;
+    font-family: 'Calligraffitti';
+}
+
+img {
+    height: 2em;
+    padding: 0.5em;
+}
+.navbar {
+    background: var(--p2-color);
+    padding: 00.2em;
+    border: 2px solid var(--p2-color);
+    .container {
+        display: flex;
+        place-content: space-between;
+    }
+
+    .mobile-menu {
+        cursor: pointer;
+
+    }
+    .logo {
+        font-family: 'Poppins';
+        text-decoration: none;
+        font-weight: bold;
+        color: var(--p1-color);
+        font-size: 2em;
+        padding-top: 00.1em;
+        
+        span {
+            color: white;
+        }
+    }
+    nav{
+        display: none;
+    }
+    
+    
+
+}
+
+a {
+    color: #444444;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 5em 2em;
+}
+
+.hero {
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    background: var(--p3-color);
+    img[class='hero-img'] {
+        
+        display: none;
+              
+        
+    }
+    .container {
+        display: block;
+        place-content: space-between;
+        
+
+    }
+}
+
+.middle-col {
+    background: var(--p3-color);
+    padding: 3em;
+    padding-bottom: 5em;
+    margin: 0;
+        
+    .subhead {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: var(--p2-color);
+        letter-spacing: 0.3em;
+        margin: 0;
+    }
+    h1 {
+        color: var(--p1-color);
+        font-size: 2.5em;
+        line-height: 1.3em;
+        margin-top: 0.2em;
+    }
+}
+
+.right-col {
+    background: white;
+    ul {
+        display: flex;
+        place-content: space-between;
+        margin-top: 1em;
+        
+    }
+}
+
+section.contact-section {
+    .container {
+        background: var(--p1-color);
+        padding: 1em;
+    }
+    label {
+        display: block;
+        font-size: 1em;
+        margin-bottom: .5em;
+        color: white;
+    }
+
+    input, textarea {
+        outline: none;
+        border: none;
+        background: none;
+        margin-bottom: 0.5em;
+        width: 100%;
+        color: white;
+        padding: .8em;
+        border-radius: .3em;
+        border-bottom: 1px solid white;
+        box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+        background-color: var(--p3-color);
+        color: var(--p1-color);
+        font-weight: bold;
+        border: none;
+        border-radius: 3em;
+        display: inline-block;
+        padding: .8em 2em;
+        width: unset;
+        cursor: pointer;
+
+    }
+    h2 {
+        font-size: 2em;
+        text-align: left;
+        padding: 0;
+        color: white;
+    }
+
+}
+nav.menu-btn {
+    display: block;
+}
+
+nav {
+    position: fixed;
+    z-index: 999;
+    width: 66%;
+    right: 0;
+    top: 0;
+    background: white;
+    height: 100vh;
+    padding: 1em;
+
+    ul.primary-nav {
+        margin-top: 5em;
+    }
+
+    li {
+
+        a {
+            color: var(--p1-color);
+            text-decoration: none;
+            display: block;
+            padding: .5em;
+            font-size: 1.3em;
+            text-align: right;
+
+            &:hover {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.mobile-menu-exit {
+    float: right;
+    margin: 0.5em;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 726px) {
+
+    .mobile-menu, .mobile-menu-exit {
+        display: none;
+    }
+
+    .navbar .container {
+        display: grid;
+        grid-template-columns: 180px auto;
+        justify-content: unset;
+    }
+
+    .navbar nav {
+        display: flex;
+        justify-content: space-between;
+        background: none;
+        position: unset;
+        height: auto;
+        width: 100%;
+        padding: 0;
+
+        ul {
+            display: flex;
+        }
+
+        a {
+            color: white;
+            
+            font-size: 1em;
+            padding: .1em 1em;
+        }
+
+        ul.primary-nav {
+            
+            margin: 0;
+            margin-top: .5em;
+            
+        }
+
+        ul.secondary-nav {
+            margin-top: .5em;
+        }
+        li.do-not-click a {
+            padding: 0.5em 1em;
+            font-size: 0.8em;
+            color: white;
+            border-radius: 0.4em;
+            font-weight: bold;
+            
+            
+
+            &:hover {
+                background: gray;
+            }
+
+        }
+
+
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+
+body {
+    font-family: 'Poppins';
+}
+    .container {
+        width: 1080px;
+        margin: 0 auto;
+    }
+    .hero .container {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        
+        .middle-col {
+            margin: 0;
+            background: var(--p3-color);
+            padding-left: 0;
+            padding-top: 9em;
+            padding-right: 27em;
+            p {
+                position: relative;
+                left: -2em;
+            }
+            h1 {
+
+                position: relative;
+                left: -0.7em;
+                font-size: 3em;
+                width: 90%;
+                span {
+                    display: block;
+                    margin-top: 0.5em;
+                    margin-bottom: 0.5em;
+                }
+            }
+        }
+        .right-col {
+            img {
+                height: 1.3em;
+            }
+            ul {
+             background: gray;
+             display: block;
+             position: absolute;
+             right: 0;
+             padding-right: 0.5em;
+             margin-top: 0;
+             text-align: right;
+             padding-top: 25em;
+      
+            }
+
+        }
+    }
+    .hero {
+        padding-top: 0;
+        position: relative;
+        background: white;
+        img[class='hero-img'] {
+            display: block;
+            height: 30em;
+            padding-bottom: 0;
+            padding-top: 3.2em;
+            background: var(--p3-color);
+        }
+    }
+
+    
+
+}
