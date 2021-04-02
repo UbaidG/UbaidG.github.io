@@ -1,2 +1,2 @@
 # UbaidG.github.io
-MEMES for friends
+Just a testing repository for websites
