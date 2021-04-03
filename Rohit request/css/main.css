@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
+body {
+  background: yellow;
+}
+
+.container {
+  margin: 3em;
+}
+
+.container .card {
+  background: #8a8a07;
+}
+
+.container .card .card-header {
+  padding: 3em 0;
+  text-align: center;
+  font-family: 'Dela Gothic One';
+  text-transform: uppercase;
+  background: url(../img/title-background.jpg);
+}
+
+.container .card .card-header h1 {
+  background: rgba(255, 255, 0, 0.55);
+  color: #313100;
+}
+
+.container .card form.w-50 .form-group {
+  margin-top: 1em;
+  background: yellow;
+  padding: 1em;
+}
+
+.container .card form.w-50 .form-group input {
+  background: none;
+  border-right: none;
+  border-top: none;
+  border-left: none;
+  border-bottom: 2px solid black;
+  font-weight: bold;
+  width: auto;
+  font-family: 'Poppins';
+  text-transform: uppercase;
+  font-size: .8em;
+  padding: 1em;
+}
+
+.container .card form.w-50 label {
+  text-transform: uppercase;
+  font-size: 1em;
+  padding: 1em;
+  font-weight: bold;
+  font-family: 'Poppins';
+}
+
+.container .card form.w-50 .check-button {
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.container .card form.w-50 .check-button button {
+  padding: 1em;
+  border-radius: 1em;
+  background: #8a8a07;
+  color: black;
+  text-transform: uppercase;
+  font-family: 'Dela Gothic One';
+  border: none;
+}
+
+.container .card form.w-50 .check-button button:hover {
+  color: black;
+  background: rgba(255, 255, 0, 0.55);
+}
+
+.container .card .card-footer {
+  background: yellow;
+}
+
+.container .card .card-footer h2 {
+  font-family: 'Dela Gothic One';
+  text-align: center;
+}
+
+.container .card .card-footer img {
+  width: 100%;
+}
+/*# sourceMappingURL=main.css.map */

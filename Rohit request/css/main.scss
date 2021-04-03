@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+body {
+    background: yellow;
+}
+
+.container {
+    margin: 3em;
+    .card{
+        background: rgb(138, 138, 7);
+        .card-header {
+            h1 {
+                background: rgba(255, 255, 0, 0.55);
+                color: rgb(49, 49, 0);
+            }
+            padding: 3em 0;
+            text-align: center;
+            font-family: 'Dela Gothic One';
+            text-transform: uppercase;
+            background: url(../img/title-background.jpg);
+        }
+        form.w-50 {
+            .form-group {
+                margin-top: 1em;
+                background: yellow;
+                padding: 1em;
+                
+                input {
+                    background: none;
+                    
+                    border-right: none ;
+                    border-top: none ;
+                    border-left: none ;
+                    border-bottom: 2px solid black;
+                    font-weight: bold;
+                    width: auto;
+                    font-family: 'Poppins';
+                    text-transform: uppercase;
+                    font-size: .8em;
+                    padding: 1em;
+                }
+            }
+
+           
+            
+            label {
+                text-transform: uppercase;
+                font-size: 1em;
+                padding: 1em;
+                font-weight: bold;
+                font-family: 'Poppins';
+            }
+
+            .check-button {
+                text-align: center;
+                margin-top: 1em;
+                margin-bottom: 1em;
+                
+                button {
+                    padding: 1em;
+                    border-radius: 1em;
+                    background: rgb(138, 138, 7);
+                    color: black;
+                    text-transform: uppercase;
+                    font-family: 'Dela Gothic One';
+                    border: none;
+
+                    &:hover {
+                        color: black;
+                        background: rgba(255, 255, 0, 0.55);
+                    }
+                }
+            }
+            
+        }
+        .card-footer {
+            background: yellow;
+                h2 {
+                    font-family: 'Dela Gothic One';
+                    text-align: center;
+
+                }
+                img {
+                      width: 100%;
+                }
+                  
+
+        }
+
+    }    
+    
+}

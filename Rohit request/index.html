@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Maniac Fitness</title>
+    
+    <link rel="stylesheet" href="css/main.css">
+ 
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+            <div class="card-header text-center">
+                <h1>BMI Calculator</h1>
+            </div>
+            
+              
+            
+            <form class="w-50">
+                    <div class="form-group">
+                        <label>Weight:</label>
+                        <input type="number" name="" placeholder="Weight in Kg" required id="weight" class="form-control">
+
+                    </div>
+
+                    <div class="form-group">
+                            <label>Height:</label>
+                            <input type="number" name="" placeholder="Height in Ft"required id="height" class="form-control">
+                            
+                        </div>
+
+
+                        <div class="form-group">
+                                <label>BMI Value:</label>
+                                <input type="number" name="" id="bmivalue" class="form-control">
+                                
+                            </div>
+                     <div class="check-button">
+                                <button type="submit" class="btn btn-success" onclick=getbmivalue()">Check BMI</button>
+                    </div>
+                </form>
+            <div class ="card-footer">
+                    <h2>BMI CHART</h2>
+                    <img src="img/bmi-chart.jpeg" alt="bmi-chart">
+            
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script>
+    
+
+        function getbmivalue(){
+        var weight= document.getElementById('weight').value;
+        var height= document.getElementById('height').value;
+        height= height*12;
+        height=height*0.025;//now height is in meter
+
+
+        var newbmivalue=weight/(height*height);
+        document.getElementById('bmivalue').value=newbmivalue;
+
+        }
+
+    </script>
+
+ <!--jQuery library -->
+ <script src=https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js></script>
+ 
+ <!--Latest compiled JavaScript -->
+ <script src=https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js></script> 
+
+
+</body>
+</html>
