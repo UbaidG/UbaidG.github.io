@@ -1,2 +1,2 @@
 # UbaidG.github.io
-Just a testing repository for websites
+Just a repository for website testing.
